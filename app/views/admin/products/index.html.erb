@@ -16,6 +16,9 @@
             <thead class="bg-white border-b">
             <tr>
               <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
+                  Image
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
                   Name
               </th>
               <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
@@ -23,9 +26,6 @@
               </th>
               <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
                   Price
-              </th>
-              <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
-                  Categoriy
               </th>
               <th scope="col" class="text-sm font-medium text-gray-800 px-6 py-4 text-left">
                   Active
@@ -41,7 +41,7 @@
                   </td>
                 
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 ">
-                    <%= p.name %>
+                    <%= link_to p.name, edit_admin_product_path(p) %>
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 ">
                     <%= p.description %>
